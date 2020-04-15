@@ -10,13 +10,13 @@ public class UiInitializer : MonoBehaviour {
 
 	public UIRuntimeSet allUIStateRootGameObjects;
 
-	public WaveDataRuntimeSet allWaveData;
+/* 	public WaveDataRuntimeSet allWaveData;
 
 	public Transform waveAParent;
 
 	public Transform waveBParent;
 
-	public Transform waveCParent;
+	public Transform waveCParent; */
 
 	void Awake () {
 /* 		StateController controller = GetComponent<StateController>();
@@ -47,7 +47,7 @@ public class UiInitializer : MonoBehaviour {
 	}
 
 	void ConfigureWaveData() {
-		allWaveData.items[0].waveXSlider = waveAParent.Find("X Slider").GetComponent<Slider>();
+/* 		allWaveData.items[0].waveXSlider = waveAParent.Find("X Slider").GetComponent<Slider>();
 		allWaveData.items[0].waveYSlider = waveAParent.Find("Y Slider").GetComponent<Slider>();
 		allWaveData.items[0].waveSteepnessSlider = waveAParent.Find("Wave Height Slider").GetComponent<Slider>();
 		allWaveData.items[0].waveLengthSlider = waveAParent.Find("Wave Length Slider").GetComponent<Slider>();
@@ -60,13 +60,13 @@ public class UiInitializer : MonoBehaviour {
 		allWaveData.items[2].waveXSlider = waveCParent.Find("X Slider").GetComponent<Slider>();
 		allWaveData.items[2].waveYSlider = waveCParent.Find("Y Slider").GetComponent<Slider>();
 		allWaveData.items[2].waveSteepnessSlider = waveCParent.Find("Wave Height Slider").GetComponent<Slider>();
-		allWaveData.items[2].waveLengthSlider = waveCParent.Find("Wave Length Slider").GetComponent<Slider>();
+		allWaveData.items[2].waveLengthSlider = waveCParent.Find("Wave Length Slider").GetComponent<Slider>(); */
 	}
 
 	public void SetWaveSliderValues(){
 
 		// Set the slider to the current values
-		allWaveData.items[0].waveXSlider.value = allWaveData.items[0].wave.x;
+/* 		allWaveData.items[0].waveXSlider.value = allWaveData.items[0].wave.x;
 		allWaveData.items[0].waveYSlider.value = allWaveData.items[0].wave.y;
 		allWaveData.items[0].waveSteepnessSlider.value = allWaveData.items[0].wave.z;
 		allWaveData.items[0].waveLengthSlider.value = allWaveData.items[0].wave.w;
@@ -79,7 +79,7 @@ public class UiInitializer : MonoBehaviour {
 		allWaveData.items[2].waveXSlider.value = allWaveData.items[2].wave.x;
 		allWaveData.items[2].waveYSlider.value = allWaveData.items[2].wave.y;
 		allWaveData.items[2].waveSteepnessSlider.value = allWaveData.items[2].wave.z;
-		allWaveData.items[2].waveLengthSlider.value = allWaveData.items[2].wave.w; 
+		allWaveData.items[2].waveLengthSlider.value = allWaveData.items[2].wave.w;  */
 
 	}
 }
