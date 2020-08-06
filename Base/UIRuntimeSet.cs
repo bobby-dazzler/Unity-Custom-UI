@@ -19,7 +19,10 @@ public class UIRuntimeSet : RuntimeSet<GameObject> {
 		items[activeUIIndex].SetActive(false);
 		items[index].SetActive(true);
 		activeUIIndex = index;
-		controller.UpdateState();
+		if (controller.currentState.transitions != null && controller.currentState.transitions.Length > 0) {
+			controller.UpdateState();
+		}
 	}
+
 }
 
